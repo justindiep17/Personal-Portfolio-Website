@@ -1,0 +1,136 @@
+#text-panel {
+  padding: 18vh 20% 0vh 3%;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  height: 10vh;
+  padding: 0vh 5vh;
+}
+
+.navbar-brand {
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-size: 2rem;
+  color: black;
+  letter-spacing: 1px;
+}
+
+/* Img Panel */
+
+.color-block {
+  background-color: #e6dace;
+  min-height: 90vh;
+  height: auto;
+  width: 80%;
+}
+
+.profile-card {
+  background-color: #f5ede9;
+  height: 75vh;
+  width: 25%;
+  z-index: 2;
+  position: absolute;
+  right: 50%;
+  top: 17.5vh;
+  box-shadow: -20px 20px 14px 	rgba(0,0,0, 0.25);
+  border: 1.5px solid #ded8d5;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 60%;
+  margin: 15% 20% 0%;
+}
+
+.profile-name {
+  font-family: 'Roboto';
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+  margin: 7.5% 20% 5%;
+}
+
+.profile-card-bar {
+  background-color: #0458b8;
+  width: 32%;
+  margin: 0% 34%;
+  height: 2vh;
+}
+
+.profile-desc {
+  font-family: 'Cabin';
+  margin: 5% 10%;
+  text-align: center;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+}
+
+.socials-bar {
+  background-color: white;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px 10%;
+  text-align: center;
+}
+
+.social-link {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 3px;
+}
+
+.social-link:hover {
+  color: #0458b8;
+}
+
+h1 {
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-size: 4.75rem;
+  letter-spacing: 1px;
+  margin: 0rem;
+}
+
+h2 {
+  font-family: 'Cabin';
+  font-size: 1.75rem;
+  margin: 0rem;
+  padding: 0rem;
+  font-weight: 500;
+}
+
+p {
+  font-family: 'Cabin';
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.home-btns-container {
+  margin: 1.5rem 0rem;
+}
+
+.home-btn {
+  font-family: 'Cabin';
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+#resume-btn {
+  background-color: #0458b8;
+  border: 1px solid #0458b8;
+  color: white;
+}
+
+#contact-btn {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
