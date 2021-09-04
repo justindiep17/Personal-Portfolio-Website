@@ -1,5 +1,5 @@
 #text-panel {
-  padding: 18vh 20% 0vh 3%;
+  padding: 18vh 8% 0vh 3%;
   z-index: 2;
 }
 
@@ -7,6 +7,9 @@
   padding: 0;
 }
 
+.row {
+  margin: 0;
+}
 .row > * {
   padding: 0;
 }
@@ -20,17 +23,36 @@ body {
 #home-row {
   flex: 1;
 }
+
 /* Navbar */
+
 .navbar {
-  padding: 3vh 0vh;
-  height: auto;
+  padding: 1vh 5vh;
   width: 100%;
   margin: none;
-  padding: 0vh 5vh;
   background-color: white;
   z-index: 3;
 }
 
+.navbar-toggler {
+  color: black;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-toggler-icon {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: none !important;
+}
+
+.navbar-toggler-icon i {
+  color: black;
+}
 .navbar-brand {
   font-family: 'Roboto';
   font-weight: 900;
@@ -39,12 +61,27 @@ body {
   letter-spacing: 1px;
 }
 
+.navbar-brand:hover {
+  color: black;
+}
+
+.nav-link {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 1.25rem;
+  color: black;
+  letter-spacing: 1px;
+}
+
+.nav-link:hover {
+  color: #0458b8;
+}
+
 /* Img Panel */
 
 #img-panel {
   background-color: #e6dace;
   min-height: 90vh;
-  height: 100%;
   display: flex;
   flex-direction: row-reverse;
 }
@@ -53,6 +90,7 @@ body {
   background-color: white;
   position: relative;
   left: 80%;
+  height: 100%;
 }
 
 .profile-card {
@@ -79,7 +117,6 @@ body {
   width: 50%;
   margin: 10% 25% 0%;
 }
-
 
 .card-body {
   padding: 0;
@@ -127,6 +164,7 @@ body {
   right: 0;
   padding: 10px 10%;
   text-align: center;
+  height: calc(3.1em + 6px);
 }
 
 .social-link {
@@ -139,6 +177,8 @@ body {
 .social-link:hover {
   color: #0458b8;
 }
+
+/* Text panel */
 
 h1 {
   font-family: 'Roboto';
@@ -190,8 +230,8 @@ p {
   display: flex;
   flex-direction: column;
   background-color: #f5ede9;
-  height: 80vh;
-  margin: 5vh 27.5%;
+  height: 100%;
+  width: 100%;
   box-shadow: -20px 20px 14px 	rgba(0,0,0, 0.25);
   border: 1.5px solid #ded8d5;
   padding-top: 2.25rem;
@@ -216,7 +256,7 @@ p {
   margin: 0% 8%;
 }
 
-input[type=text] {
+input[type=text], input[type="email"] {
   width: 84%;
   margin: 2% 8%;
 }
@@ -227,14 +267,17 @@ input[type=text] {
   flex: 1;
 }
 
-#msg-input input[type=text]{
-  flex: 1;
+#msg-input textarea {
+  flex: 0.95;
+  width: 84%;
+  margin: 2% 8%;
   height: 100%;
 }
 
 .submit-btn {
+  flex: 0.05;
   margin: 2% 8%;
-  width: 20%;
+  width: auto;
   font-family: "Roboto";
   font-size: 1rem;
   background-color: #0458b8;
@@ -244,4 +287,102 @@ input[type=text] {
 
 .submit-btn:hover {
   color: white;
+}
+
+/* Projects Page */
+#projects-page {
+  height: 100%;
+  width: 100%;
+  background-color: #f5ede9;
+}
+#projects-display {
+  padding: 0 5vh;
+  margin-top: 5vh;
+  margin-left: -15px;
+}
+
+.project-panel {
+  padding: 0px 15px;
+}
+
+.project-panel .card {
+  height: 100%;
+  background-color: white;
+  border-radius: 0%;
+  box-shadow: -20px 20px 14px 	rgba(0,0,0, 0.25);
+  border: 1px solid black;
+}
+
+.project-img {
+  border-radius: 0%;
+}
+.project-card-body {
+  padding: 0.8rem 15px;
+}
+
+.project-title {
+  margin-bottom: 0.5rem;
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+
+.attributes-row {
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
+
+.project-attribute-tag {
+  padding: 1px;
+  margin: 0;
+  display: inline-block;
+}
+
+.project-attribute-tag span {
+  background-color: rgba(4, 88, 184, 0.55);
+  color: black;
+  border-radius: 10%;
+  text-align: center;
+  font-family: "Cabin";
+  font-weight: 400;
+  font-size: 1.1rem;
+  padding: 3px 5px;
+}
+
+
+
+
+@media only screen and (max-width:767px) {
+  #text-panel {
+    padding: 5% 5vh;
+  }
+  #img-panel {
+    min-height: 0;
+    height: auto;
+  }
+  .profile-card {
+    min-height: 0;
+    height: auto;
+    margin: 0;
+    box-shadow: none;
+    width: 100%;
+  }
+
+  .profile-card .card {
+    height: auto;
+    border: none;
+  }
+  .profile-img {
+    width: 30%;
+    margin: 5% 35% 0%;
+  }
+  .socials-bar {
+    background-color: #e6dace;
+  }
+  .color-block {
+    display: none;
+  }
+  .project-panel {
+    margin: 4vh 0;
+  }
 }
