@@ -2,7 +2,6 @@ const express = require('express')
 const nodemailer = require('nodemailer')
 const ejs = require('ejs')
 const path = require('path')
-// const auth = require('./auth')
 
 const app = express()
 app.set('view engine', 'ejs')
