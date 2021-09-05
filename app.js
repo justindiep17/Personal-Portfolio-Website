@@ -2,7 +2,7 @@ const express = require('express')
 const nodemailer = require('nodemailer')
 const ejs = require('ejs')
 const path = require('path')
-const auth = require('./auth')
+// const auth = require('./auth')
 
 const app = express()
 app.set('view engine', 'ejs')
@@ -13,8 +13,8 @@ app.use(express.urlencoded({ extended: true }))
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: auth.siteEmail,
-    pass: auth.emailPassword
+    user: SITE_EMAIL,
+    pass: EMAIL_PASSWORD
   }
 })
 
@@ -53,8 +53,8 @@ app.get('/projects', (req, res) => {
   res.render('projects.ejs', {
     projects: [
       {
-        img_path: rootPath + "combine_images2.jpg",
-        name: "Roll It",
+        img_path: rootPath + "roll_it.jpg",
+        name: "Simple Die",
         description: "Cross platform mobile app that provides a simple yet elegant way to roll dies digitally.",
         link: "#",
         attributes: ["Dart", "Flutter"]
@@ -62,16 +62,22 @@ app.get('/projects', (req, res) => {
       {
         img_path: rootPath + "the_hearth.png",
         name: "The Hearth",
-        description: "Blog website about Blizzard's" + ' popular video game Hearthstone',
+        description: "Fully functional blog website about Blizzard's" + ' popular video game Hearthstone',
         link: "#",
         attributes: ["Python", "Flask", "HTML/CSS", "JavaScript"]
+      },
+      {
+        img_path: rootPath + "busy.png",
+        name: "IsItBusy?",
+        description: "Web app that checks the busyness of gorcery stores based on crowd sourced data.",
+        link: "#",
+        attributes: ["Python", "Flask", "HTML/CSS", "MongoDB",]
       },
     ]
   })
 })
 
 
-app.listen(3000, () => {
-  console.log("ON PORT 3000!")
+app.listen(process.env.PORT || 5000, () => {
 })
 

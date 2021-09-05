@@ -114,8 +114,10 @@ body {
 
 .profile-img {
   border-radius: 50%;
-  width: 50%;
-  margin: 10% 25% 0%;
+  width: 60%;
+  height: 40%;
+  margin: 10% 20% 0%;
+  object-fit: cover;
 }
 
 .card-body {
@@ -200,6 +202,7 @@ p {
   font-family: 'Cabin';
   font-size: 1.25rem;
   font-weight: 400;
+  margin: 0.4rem 0rem;
 }
 
 .home-btns-container {
@@ -223,6 +226,7 @@ p {
   border: 1px solid black;
   color: black;
 }
+
 
 /* 'contact.ejs' */
 
@@ -297,12 +301,14 @@ input[type=text], input[type="email"] {
 }
 #projects-display {
   padding: 0 5vh;
-  margin-top: 5vh;
+  margin: 5vh 0vh;
   margin-left: -15px;
+  background-color: #f5ede9;
 }
 
 .project-panel {
   padding: 0px 15px;
+  margin-bottom: 5%;
 }
 
 .project-panel .card {
@@ -372,6 +378,7 @@ input[type=text], input[type="email"] {
     height: auto;
     border: none;
   }
+
   .profile-img {
     width: 30%;
     margin: 5% 35% 0%;
