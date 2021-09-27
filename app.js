@@ -53,19 +53,19 @@ app.get("/projects", (req, res) => {
     projects: [
       {
         img_path: rootPath + "roll_it.jpg",
-        name: "Simple Dice",
+        name: "Dice N' Die",
         description:
-          "Cross platform mobile app that provides a simple yet elegant way to roll dies digitally.",
-        link: "#",
-        attributes: ["Dart", "Flutter"],
+          "Simple web application that allows users to roll dies for RPG style games.",
+        link: "#https://dice-n-die.herokuapp.com/",
+        attributes: ["React", "HTML/CSS", "JavaScript"],
       },
       {
         img_path: rootPath + "the_hearth.png",
         name: "The Hearth",
         description:
-          "Fully functional blog website about Blizzard's" +
+          "Responsive and detailed blog website about Blizzard's" +
           " popular video game Hearthstone",
-        link: "#",
+        link: "https://the-hearth.herokuapp.com/",
         attributes: ["Python", "Flask", "HTML/CSS", "JavaScript"],
       },
       {
@@ -73,7 +73,7 @@ app.get("/projects", (req, res) => {
         name: "IsItBusy?",
         description:
           "Web app that checks the busyness of gorcery stores based on crowd sourced data.",
-        link: "#",
+        link: "https://is-it-busy.herokuapp.com/",
         attributes: ["Python", "Flask", "HTML/CSS", "MongoDB"],
       },
     ],
