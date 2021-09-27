@@ -52,11 +52,11 @@ app.get("/projects", (req, res) => {
   res.render("projects.ejs", {
     projects: [
       {
-        img_path: rootPath + "roll_it.jpg",
+        img_path: rootPath + "dice_n_die.png",
         name: "Dice N' Die",
         description:
           "Simple web application that allows users to roll dies for RPG style games.",
-        link: "#https://dice-n-die.herokuapp.com/",
+        link: "https://dice-n-die.herokuapp.com/",
         attributes: ["React", "HTML/CSS", "JavaScript"],
       },
       {
