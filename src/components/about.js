@@ -107,8 +107,9 @@ function About() {
           </p>
           <p className={styles.subheading}>When not working, </p>
           <p className={styles.aboutText}>
-            I can often be found going on lengthy outdoor runs, composing new
-            music on the piano, or indulging in yet another Netflix sitcom.
+            I can often be found going on lengthy outdoor runs, playing
+            classical music on the piano, or indulging in yet another sitcom on
+            Netflix.
           </p>
           <div style={{ display: "flex", justifyContent: "flex-start" }}>
             <button
