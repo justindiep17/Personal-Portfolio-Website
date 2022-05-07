@@ -84,6 +84,11 @@ const useStyles = makeStyles((theme) =>
 function About() {
   const styles = useStyles();
 
+  const openInNewTab = (url) => {
+    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+    if (newWindow) newWindow.opener = null;
+  };
+
   return (
     <Grid
       display="flex"
@@ -106,10 +111,22 @@ function About() {
             music on the piano, or indulging in yet another Netflix sitcom.
           </p>
           <div style={{ display: "flex", justifyContent: "flex-start" }}>
-            <button className={`${styles.btn} ${styles.linkedinBtn}`}>
+            <button
+              className={`${styles.btn} ${styles.linkedinBtn}`}
+              onClick={() =>
+                openInNewTab(
+                  "https://www.linkedin.com/in/justin-diep-962b0a1a3/?originalSubdomain=ca"
+                )
+              }
+            >
               <LinkedInIcon sx={{ marginRight: "6px" }} /> LinkedIn
             </button>
-            <button className={`${styles.btn} ${styles.githubBtn}`}>
+            <button
+              className={`${styles.btn} ${styles.githubBtn}`}
+              onClick={() => {
+                openInNewTab("https://github.com/justindiep17");
+              }}
+            >
               <GitHubIcon sx={{ marginRight: "6px" }} /> GitHub
             </button>
           </div>
