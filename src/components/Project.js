@@ -39,7 +39,7 @@ function Projects() {
     {
       title: "IsItBusy?",
       description:
-        "Web application that checks the busyness of gorcery stores in a location based on crowd sourced data.",
+        "Web application that checks the busyness of gorcery stores in a location based on crowdsourced data.",
       imgLink:
         "https://res.cloudinary.com/dtjedv3hm/image/upload/v1651544700/isitbusy.png",
       githubLink: "https://github.com/justindiep17/IsItBusy",
