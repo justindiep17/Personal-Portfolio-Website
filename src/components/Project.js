@@ -48,7 +48,7 @@ function Projects() {
     {
       title: "The Hearth",
       description:
-        "Blog websites that allows users to read, write, and publish blog posts about the digital card game Hearthstone.",
+        "Blog website that allows users to read, write, and publish blog posts about the digital card game Hearthstone.",
       imgLink:
         "https://res.cloudinary.com/dtjedv3hm/image/upload/v1651545799/the_hearth_uxvi09.png",
       githubLink: "https://github.com/justindiep17/TheHearth",
