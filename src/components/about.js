@@ -103,7 +103,7 @@ function About() {
           <p className={styles.aboutText}>
             I'm a second-year Computer Science student at the University of
             Waterloo. I have a passion for full stack web development and I am
-            currently seeking internship opportunities for Fall 2022.
+            currently seeking internship opportunities for 2024.
           </p>
           <p className={styles.subheading}>When not working, </p>
           <p className={styles.aboutText}>
