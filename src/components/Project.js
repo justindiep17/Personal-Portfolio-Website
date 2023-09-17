@@ -53,7 +53,6 @@ function Projects() {
         "https://res.cloudinary.com/dtjedv3hm/image/upload/v1651545799/the_hearth_uxvi09.png",
       githubLink: "https://github.com/justindiep17/TheHearth",
       techs: ["Python", "Bootstrap", "PostgreSQL", "Flask"],
-      projectLink: "https://the-hearth.herokuapp.com/",
     },
   ];
   return (
