@@ -101,7 +101,7 @@ function About() {
         <div className={styles.textSection}>
           <p className={styles.subheading}>Hey there, I'm Justin Diep! 👋</p>
           <p className={styles.aboutText}>
-            I'm a second-year Computer Science student at the University of
+            I'm a third-year Computer Science student at the University of
             Waterloo. I have a passion for full stack web development and I am
             currently seeking internship opportunities for 2024.
           </p>

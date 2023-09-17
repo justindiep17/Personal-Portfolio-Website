@@ -16,7 +16,7 @@ function Footer() {
       }}
     >
       <CopyrightIcon fontSize="small" sx={{ marginRight: "4px" }} />
-      Justin Diep, 2022
+      Justin Diep, 2023
     </Grid>
   );
 }
