@@ -34,7 +34,6 @@ function Projects() {
         "https://res.cloudinary.com/dtjedv3hm/image/upload/v1651360513/studybuddy.png",
       githubLink: "https://github.com/justindiep17/study-buddy-v1",
       techs: ["React", "Firebase", "JavaScript"],
-      projectLink: "https://study-buddy-v1.herokuapp.com/",
     },
     {
       title: "IsItBusy?",
